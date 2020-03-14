@@ -1,0 +1,1 @@
+This repository contains solved leetcode questions. This is an open project where all can contribute with the aim of increasing knowlege. You welcome to add yours.
