@@ -7,18 +7,31 @@
 #  Input: ["h","e","l","l","o"]
 # Output: ["o","l","l","e","h"]
 
-
-def reverseString(self, s)->None:
+#Recursive approach
+# def reverseString(self, s)->None:
     
-    def helper(left, right):
-        if left < right:
-            s[left], s[right] = s[right], s[left]
-            helper(left + 1, right -1)
+#     def helper(left, right):
+#         if left < right:
+#             s[left], s[right] = s[right], s[left]
+#             helper(left + 1, right -1)
    
-    helper(0, len(s)-1)  
+#     helper(0, len(s)-1)  
      
     #print(s)     
 
+
+
+#iterative approach 
+
+def reverseString(self, s)->None:
+
+    left, right = 0, len(s) -1
+
+    while left < right:
+        s[left], s[right] = s[right], s[left]
+        left, right = left +1 , right -1
+
+    #print(s)    
 
     
 
